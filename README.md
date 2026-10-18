@@ -1,12 +1,14 @@
-# YouTube for Android TV (공식 배포)
+# YouTube-Apps (스마트 TV 통합 공식 배포)
 
 [![Android](https://img.shields.io/badge/Platform-Android%20TV%20%7C%20Google%20TV-3DDC84?logo=android&logoColor=white)](https://www.android.com/tv/)
-[![Latest Release](https://img.shields.io/github/v/release/k2love/YouTube-for-Android-TV-Release?color=FF0000&label=Latest%20Release)](https://github.com/k2love/YouTube-for-Android-TV-Release/releases/latest)
+[![Tizen](https://img.shields.io/badge/Platform-Samsung%20Tizen-1B60A5?logo=samsung&logoColor=white)](https://github.com/k2love/YouTube-for-SamsungTV)
+[![webOS](https://img.shields.io/badge/Platform-LG%20webOS-CF0A2C?logo=lg&logoColor=white)]()
+[![Latest Release](https://img.shields.io/github/v/release/k2love/YouTube-Apps?color=FF0000&label=Latest%20Release)](https://github.com/k2love/YouTube-Apps/releases/latest)
 [![Ad-Free](https://img.shields.io/badge/Ad--Free-100%25%20Zero--Ad-brightgreen)]()
 [![Resolution](https://img.shields.io/badge/Resolution-4K%20%2F%208K%20Unlocked-blue)]()
 [![License](https://img.shields.io/badge/License-MIT-orange)]()
 
-안드로이드 TV(Android TV) 및 구글 TV(Google TV)를 위한 고성능 무광고 무중단 스트리밍 클라이언트 공식 배포 저장소입니다.
+안드로이드 TV(Android TV), 구글 TV(Google TV), 삼성 스마트 TV(Tizen), LG 스마트 TV(webOS)를 위한 고성능 무광고 무중단 스트리밍 클라이언트 통합 공식 배포 저장소입니다.
 
 순정 YouTube TV의 직관적인 리모컨 D-Pad 조작성과 모든 UI를 100% 그대로 유지하면서, 광고를 원천 차단하고 4K/8K 고화질 및 완전 투명 HUD를 제공합니다.
 
@@ -14,11 +16,11 @@
 
 ## 📦 최신 릴리즈 다운로드 (Download)
 
-| 플랫폼 | 설치 파일 | 다운로드 링크 |
+| 플랫폼 | 설치 패키지 | 다운로드 링크 |
 | :--- | :--- | :--- |
-| **Android TV / Google TV** | `.apk` (약 5.2 MB) | [📥 **최신 APK 다운로드**](https://github.com/k2love/YouTube-for-Android-TV-Release/releases/latest) |
-| **Samsung Smart TV (Tizen)** | `.wgt` (약 2.8 MB) | [📺 **YouTube-for-SamsungTV 저장소 이동**](https://github.com/k2love/YouTube-for-SamsungTV) |
-| **LG Smart TV (webOS)** | `.ipk` (약 0.03 MB) | [📥 **webOS 패키지 다운로드**](https://github.com/k2love/YouTube-for-Android-TV-Release/releases/latest) |
+| **Android TV / Google TV** | `.apk` (약 5.2 MB) | [📥 **최신 APK 다운로드**](https://github.com/k2love/YouTube-Apps/releases/latest) |
+| **Samsung Smart TV (Tizen)** | `.wgt` (약 2.8 MB) | [📺 **YouTube-for-SamsungTV 저장소**](https://github.com/k2love/YouTube-for-SamsungTV) \| [📥 **WGT 패키지**](https://github.com/k2love/YouTube-Apps/releases/latest) |
+| **LG Smart TV (webOS)** | `.ipk` (약 0.03 MB) | [📥 **webOS 패키지 다운로드**](https://github.com/k2love/YouTube-Apps/releases/latest) |
 
 ---
 
@@ -62,7 +64,7 @@
 
 ## 💬 문제 제보 및 건의사항 (Bug Report & Feedback)
 
-앱 사용 중 발생하는 버그나 기능 건의사항은 [GitHub Issues](https://github.com/k2love/YouTube-for-Android-TV-Release/issues)에 자유롭게 남겨주세요.
+앱 사용 중 발생하는 버그나 기능 건의사항은 [GitHub Issues](https://github.com/k2love/YouTube-Apps/issues)에 자유롭게 남겨주세요.
 
 ---
 
