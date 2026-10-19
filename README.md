@@ -16,11 +16,14 @@
 
 ## 📦 최신 릴리즈 다운로드 (Download)
 
-| 플랫폼 | 설치 패키지 | 다운로드 링크 |
-| :--- | :--- | :--- |
-| **Android TV / Google TV** | `.apk` (약 5.2 MB) | [📥 **최신 APK 다운로드**](https://github.com/k2love/YouTube-Apps/releases/latest) |
-| **Samsung Smart TV (Tizen)** | `.wgt` (약 2.8 MB) | [📺 **YouTube-for-SamsungTV 저장소**](https://github.com/k2love/YouTube-for-SamsungTV) \| [📥 **WGT 패키지**](https://github.com/k2love/YouTube-Apps/releases/latest) |
-| **LG Smart TV (webOS)** | `.ipk` (약 0.03 MB) | [📥 **webOS 패키지 다운로드**](https://github.com/k2love/YouTube-Apps/releases/latest) |
+사용자의 TV 사양과 환경에 맞춰 최적의 버전을 선택할 수 있도록 **[안드로이드 TV 이원화 라인업]**을 제공합니다:
+
+| 플랫폼 / 에디션 | 설치 패키지 | 파일 크기 | 권장 대상 및 주요 특징 | 다운로드 링크 |
+| :--- | :--- | :--- | :--- | :--- |
+| **Android TV (Chrobalt)** | `YT_TV_Chrobalt.apk` | 약 75 MB | 🏆 **[추천] 최신 스마트 TV 최적화 (Cobalt C++ 네이티브)**<br>• 순정 YouTube C++ 네이티브 미디어 엔진(`libchrobalt.so`) 탑재<br>• 4K 60fps 무중단 하드웨어 가속 (Direct Tunnel Mode)<br>• JNI 직접 주입 0ms 무광고 & 스마트 쇼핑 QR 차단<br>• 리모컨 채널+/- 키로 0.25x~4.0x 배속 조절 (OSD 뱃지) & 1.0x 리셋 | [📥 **다운로드**](https://github.com/k2love/YouTube-Apps/releases/latest) |
+| **Android TV (Lightweight)** | `YT_TV_AC.apk` | 약 5.2 MB | 🪶 **초경량 / 구형 및 보급형 기기용 (Lightweight WebView)**<br>• 5.2 MB 초경량 시스템 웹뷰 기반 아키텍처<br>• 저장 공간이 부족하거나 스펙이 제한된 구형 TV에 최적<br>• 100% 무광고 & OLED 완전 투명 HUD<br>• 리모컨 채널+/- 키로 0.25x~4.0x 배속 조절 & 1.0x 리셋 | [📥 **다운로드**](https://github.com/k2love/YouTube-Apps/releases/latest) |
+| **Samsung Smart TV (Tizen)** | `YT_TV_AC_Tizen.wgt` | 약 1.0 MB | 📺 **삼성 스마트 TV 전용** (2018년 이후 타이젠 모델)<br>• 100% 제로-애드 & OLED 투명 HUD | [📺 **Tizen 저장소**](https://github.com/k2love/YouTube-for-SamsungTV) \| [📥 **WGT 받기**](https://github.com/k2love/YouTube-Apps/releases/latest) |
+| **LG Smart TV (webOS)** | `YT_TV_AC_webOS.ipk` | 약 0.03 MB | 📺 **LG 스마트 TV 전용** (webOS 3.0 이상)<br>• 100% 제로-애드 & OLED 투명 HUD | [📥 **IPK 받기**](https://github.com/k2love/YouTube-Apps/releases/latest) |
 
 ---
 
@@ -29,14 +32,16 @@
 - 🛡️ **100% 제로-애드 (Zero-Ad Architecture)**
   - 프리롤(시작 전), 미드롤(시청 중), 포스트롤, 홈 화면 배너 및 스폰서 광고를 네트워크 및 런타임 레벨에서 원천 차단합니다.
   - 영상 전환 시 잔류 광고 오디오가 흘러나오는 현상을 네이티브 킬스위치로 완벽 방지합니다.
-- 🎬 **4K UHD (2160p) & 8K (4320p) 고화질 원천 언락**
-  - 저사양 기기로 오인식되어 720p로 강제 다운그레이드되던 화질 제한을 해제하고, 최대 4K 60fps 및 8K 화질 옵션을 자유롭게 선택할 수 있습니다.
+- 🚫 **스마트 쇼핑 QR 코드 차단 (로그인 QR 코드 보존)**
+  - 시청 중 화면 우측 하단을 가리는 거치적거리는 협찬/쇼핑 QR 코드를 100% 차단하며, 모바일 계정 연동(`yt.be/activate`) 로그인 QR 코드는 정상 노출됩니다.
+- 🎬 **4K UHD (2160p 60fps) 고화질 하드웨어 가속**
+  - 저사양 기기로 오인식되어 강제 다운그레이드되던 화질 제한을 해제하고, 최대 4K 60fps 및 8K 화질 옵션을 자유롭게 선택할 수 있습니다.
+- ⚡ **리모컨 채널 키 배속 제어 (0.25x ~ 4.0x) & 원클릭 리셋**
+  - 리모컨 채널+(`CHANNEL_UP`), 채널-(`CHANNEL_DOWN`) 키로 재생 속도를 0.25배속부터 4.0배속까지 실시간 조절(OSD 뱃지 표시)할 수 있으며, 노랑 버튼을 누르면 `1.0x (일반)`으로 즉시 리셋됩니다.
 - 🕶️ **순정 완전 투명 UI (Pure Transparent OLED HUD)**
   - 시청 중 화면을 가리는 어두운 그라데이션 박스(Scrim)를 제거하여, OLED TV의 완벽한 리얼 블랙 명암비와 깔끔한 자막/컨트롤을 제공합니다.
 - 🎮 **스마트 TV 리모컨 완벽 지원**
-  - 방향키, 선택, 뒤로가기는 물론 재생/일시정지, 탐색, 배속 조절(0.25x ~ 4.0x) 단축키를 완벽 지원합니다.
-- 🔄 **원클릭 스마트 자동 업데이트 (OTA)**
-  - 앱 실행 시 최신 버전을 자동으로 감지하며, 설정 메뉴에서 언제든지 원클릭으로 최신 릴리즈를 확인하고 설치할 수 있습니다.
+  - 방향키, 선택, 뒤로가기는 물론 재생/일시정지, 탐색, 배속 조절 단축키를 완벽 지원합니다.
 
 ---
 
@@ -44,12 +49,14 @@
 
 ### 방법 1: TV의 'Downloader' 앱 사용 (가장 간편한 방법)
 1. Android TV / Google TV의 구글 플레이 스토어에서 **Downloader by AFTVnews** 앱을 설치합니다.
-2. Downloader 앱을 실행하고 URL 입력창에 최신 릴리즈 링크를 입력하거나 브라우저 기능을 통해 다운로드합니다.
+2. Downloader 앱을 실행하고 URL 입력창에 최신 릴리즈 링크를 입력하거나 브라우저 기능을 통해 원하는 에디션(`YT_TV_Chrobalt.apk` 또는 `YT_TV_AC.apk`)을 다운로드합니다.
 3. 다운로드 완료 후 화면의 안내에 따라 **[설치]**를 누르면 완료됩니다.
    > *최초 설치 시 "출처를 알 수 없는 앱 설치" 권한 허용이 필요합니다.*
 
 ### 방법 2: USB 드라이브를 통한 설치
-1. PC에서 최신 `YT_TV_AC.apk` 파일을 다운로드하여 USB 메모리에 복사합니다.
+1. PC에서 최신 APK 파일을 다운로드하여 USB 메모리에 복사합니다.
+   - 최신 고성능 TV: `YT_TV_Chrobalt.apk` 권장
+   - 구형/보급형 TV: `YT_TV_AC.apk` 권장
 2. USB를 스마트 TV에 연결한 후 파일 관리자(File Commander 등)로 APK를 선택하여 설치합니다.
 
 ### 방법 3: ADB 네트워크 무선 설치 (개발자/고급 사용자)
@@ -57,6 +64,9 @@
 2. PC 터미널에서 아래 명령어로 설치합니다:
    ```bash
    adb connect <TV_IP_주소>:5555
+   # 최신 스마트 TV 권장
+   adb install -r YT_TV_Chrobalt.apk
+   # 또는 구형 기기용
    adb install -r YT_TV_AC.apk
    ```
 
